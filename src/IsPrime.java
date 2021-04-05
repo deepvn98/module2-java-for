@@ -14,17 +14,17 @@ public class IsPrime {
     static void Showall(int n){
         int count = 0;
         int number = 2;
-        while (count<=n){
-            if (isPrime(number))
-            System.out.println(number+ ",");
-            count++;
-            number++;
+        while (count<n){
+            if (isPrime(number)){
+                System.out.println(number);
+                count++;
+            }number++;
         }
     }
 
 
     public static void main(String[] args) {
-//        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 //        System.out.println("Mời bạn nhập số cần kiểm tra: ");
 //        int number = scan.nextInt();
 //        if (isPrime(number)){
@@ -32,7 +32,10 @@ public class IsPrime {
 //        }else {
 //            System.out.println(number+" không phải là số nguyên tố!");
 //        }
-        Showall(20);
+//        in ra n số nguyên tố đầu tiên
+        System.out.println(" Bạn muốn lấy bao nhiêu số nguyên tố: ");
+        int n = scan.nextInt();
+        Showall(n);
 
     }
 }
