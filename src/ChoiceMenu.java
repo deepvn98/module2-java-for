@@ -53,7 +53,5 @@ public class ChoiceMenu {
             default:
                 System.out.println("không có trong menu");
         }
-
-
     }
 }
